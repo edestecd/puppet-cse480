@@ -1,2 +1,5 @@
+2014-04-29 (0.2.0)  Chris Edester
+        * Apache - listen on 80 and redirect to 443
+
 2014-04-28 (0.1.0)  Chris Edester
         * Move puppet module to standalone github project
