@@ -4,7 +4,7 @@ source 'https://github.com/edestecd/puppet-cse480.git'
 author 'Chris Edester'
 license 'GPLv3+'
 summary 'CSE 480 Module'
-description 'Puppet Module to set up Open Stack on Ubuntu 12.04 LTS for my CSE 480 klass'
+description 'Puppet Module to set up Open Stack with Neutron on Ubuntu 12.04 LTS for my CSE 480 klass'
 project_page 'https://github.com/edestecd/puppet-cse480'
 
 ## Add dependencies, if any:

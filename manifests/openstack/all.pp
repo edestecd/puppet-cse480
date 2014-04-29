@@ -1,5 +1,5 @@
 # all.pp
-# Install and set up core openstack components with neutron networking
+# Install and set up all openstack components with neutron networking
 # Havana release - current at the time
 #
 # requires: 'puppetlabs/openstack' module
