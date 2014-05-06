@@ -1,5 +1,5 @@
 name    'edestecd-cse480'
-version '0.2.0'
+version '0.2.1'
 source 'https://github.com/edestecd/puppet-cse480.git'
 author 'Chris Edester'
 license 'GPLv3+'
@@ -12,6 +12,3 @@ dependency 'puppetlabs/stdlib',    '>= 4.1.0'
 #dependency 'dragonfly/dflylib',    '>= 1.0.1'
 dependency 'adrien/network',       '>= 0.4.1'
 dependency 'puppetlabs/openstack', '3.0.0'
-# Puppetfile entry...
-# The git master has a fix for ruby 1.9.x
-#mod 'puppetlabs/vswitch', :git => 'https://github.com/stackforge/puppet-vswitch.git'
