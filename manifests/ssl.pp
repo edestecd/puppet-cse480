@@ -15,6 +15,9 @@ class cse480::ssl (
   validate_absolute_path($key_file)
   validate_absolute_path($ca_file)
 
+  include apache::mod::ssl
+  include apache::mod::rewrite
+
   # Apache ssl
   file { '/etc/apache2/conf-available/openstack-dashboard.conf':
     ensure  => file,
