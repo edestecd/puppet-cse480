@@ -1,5 +1,5 @@
 name    'edestecd-cse480'
-version '0.2.2'
+version '0.2.3'
 source 'https://github.com/edestecd/puppet-cse480.git'
 author 'Chris Edester'
 license 'GPLv3+'

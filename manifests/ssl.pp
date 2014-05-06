@@ -2,6 +2,15 @@
 #
 # https://ask.openstack.org/en/question/6192/horizon-unable-to-view-vnc-console-in-iframe-with-ssl/
 #
+# Openstack horizon module has ssl options for horizon,
+# but they crash apache on our setup and generally aren't good news.
+# I choose to manage the apache ssl myself and actually use the apache module classes/types,
+# rather than a bunch of nasty file_line which conflict with apache module and fight back and forth changing the file every run :( ) eww.
+#
+# Also the openstack module does not offer to set the noVNC ssl setting either,
+# which are set in nova config and
+# which I am also managing here.
+#
 
 class cse480::ssl (
   $cert_path = $cse480::params::cert_path,
@@ -17,6 +26,7 @@ class cse480::ssl (
 
   include apache::mod::ssl
   include apache::mod::rewrite
+  apache::listen { "0.0.0.0:443": }
 
   # Apache ssl
   file { '/etc/apache2/conf-available/openstack-dashboard.conf':
